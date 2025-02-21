@@ -169,15 +169,15 @@ for (let i = 0; i < videos.length; i++) {
 const sidebar = document.querySelector(".side-bar")
 const menu = document.querySelector(".menu-icon")
 const videoSection = document.querySelector(".video-section")
+const sidebartoggle = document.querySelector(".side-bar-toggle")
+const videotoggle = document.querySelector(".link-video");
 
-// menu.addEventListener('toggle',()=>{{
-//   Menu();
-// }})
+menu.addEventListener('click',()=>{{
+  sidebar.classList.toggle("sidebar-none")
+  videoSection.classList.add("video-section-toggle")
+  sidebartoggle.classList.toggle("side-bar-toggle-none")
+  videotoggle.classList.toggle("link-video-toggle")
+}})
 
 
-function Menu(){
-  sidebar.classList.toggle("side-bar-none")
-videoSection.classList.toggle("video-section-toggle")
 
-}
-// Menu();
